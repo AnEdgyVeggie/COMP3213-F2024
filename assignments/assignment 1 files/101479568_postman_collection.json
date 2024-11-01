@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "7f4fe582-8720-4738-8be9-81e690124917",
+		"name": "employees",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20745360"
+	},
+	"item": [
+		{
+			"name": "USER LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Ethan\",\r\n    \"email\": \"Ethan@GBC.com\",\r\n    \"password\": \"sylvester\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER SIGNUP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Ethan\",\r\n    \"email\": \"Ethan@GBC.com\",\r\n    \"password\": \"sylvester\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://one01479568-comp3123-assignment1.onrender.com/api/v1/user/signup",
+					"protocol": "https",
+					"host": [
+						"one01479568-comp3123-assignment1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE EMPLOYEES",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"John\",\r\n    \"lastName\": \"Smith\",\r\n    \"email\": \"JohnSmith@test.com\",\r\n    \"position\": \"Software Engineer\",\r\n    \"salary\": 90000,\r\n    \"department\": \"Back end Development\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://one01479568-comp3123-assignment1.onrender.com/api/v1/emp/employees67049122d134b8519cdf65dc",
+					"protocol": "https",
+					"host": [
+						"one01479568-comp3123-assignment1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"emp",
+						"employees67049122d134b8519cdf65dc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE EMPLOYEE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"No Longer Ethan\",\r\n    \"last_name\": \"Sylvester\",\r\n    \"salary\": 110000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://one01479568-comp3123-assignment1.onrender.com/api/v1/emp/employees67049122d134b8519cdf65dc",
+					"protocol": "https",
+					"host": [
+						"one01479568-comp3123-assignment1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"emp",
+						"employees67049122d134b8519cdf65dc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET SINGLE EMPLOYEE",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"John\",\r\n    \"last_name\": \"Smith\",\r\n    \"email\": \"JohnSmith@test.com\",\r\n    \"position\": \"Software Engineer\",\r\n    \"salary\": 90000,\r\n    \"department\": \"Back end Development\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://one01479568-comp3123-assignment1.onrender.com/api/v1/emp/employees670488758332dabed6b7ab62",
+					"protocol": "https",
+					"host": [
+						"one01479568-comp3123-assignment1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"emp",
+						"employees670488758332dabed6b7ab62"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET EMPLOYEES",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"John\",\r\n    \"last_name\": \"Smith\",\r\n    \"email\": \"JohnSmith@test.com\",\r\n    \"position\": \"Software Engineer\",\r\n    \"salary\": 90000,\r\n    \"department\": \"Back end Development\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://one01479568-comp3123-assignment1.onrender.com/api/v1/emp/employees",
+					"protocol": "https",
+					"host": [
+						"one01479568-comp3123-assignment1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"emp",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE EMPLOYEE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Ethan\",\r\n    \"last_name\": \"Sylvester\",\r\n    \"email\": \"ES@test.com\",\r\n    \"position\": \"Software Engineer\",\r\n    \"salary\": 90000,\r\n    \"department\": \"Back end Development\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://one01479568-comp3123-assignment1.onrender.com/api/v1/emp/employees",
+					"protocol": "https",
+					"host": [
+						"one01479568-comp3123-assignment1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"emp",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
